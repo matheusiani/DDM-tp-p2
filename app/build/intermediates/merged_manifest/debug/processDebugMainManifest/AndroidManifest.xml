@@ -40,6 +40,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.AppFirebaseAuth" >
         <activity
             android:name="com.example.appfirebaseauth.view.LoginActivity"
@@ -146,20 +147,27 @@
             android:authorities="com.example.appfirebaseauth.authuiinitprovider"
             android:exported="false"
             android:initOrder="90" />
-        <provider
-            android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.appfirebaseauth.androidx-startup"
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
             android:exported="false" >
             <meta-data
-                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-                android:value="androidx.startup" />
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
-                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-                android:value="androidx.startup" />
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
-                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-                android:value="androidx.startup" />
-        </provider>
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
 
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
@@ -199,20 +207,6 @@
         </activity>
 
         <service
-            android:name="com.google.firebase.components.ComponentDiscoveryService"
-            android:directBootAware="true"
-            android:exported="false" >
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-        </service>
-        <service
             android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
             android:enabled="true"
             android:exported="false" >
@@ -244,17 +238,31 @@
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
             android:visibleToInstantApps="true" />
 
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.example.appfirebaseauth.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />
-
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.example.appfirebaseauth.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

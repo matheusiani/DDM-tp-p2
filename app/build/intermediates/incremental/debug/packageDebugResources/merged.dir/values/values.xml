@@ -17,16 +17,16 @@
     <string name="btn_ir_cadastro">Criar nova conta (Cadastrar usuário)</string>
     <string name="btn_sair">Sair e Retornar ao Login</string>
     <string name="btn_voltar_login">Voltar para a Tela de Login</string>
-    <string name="gcm_defaultSenderId" translatable="false">140022407267</string>
-    <string name="google_api_key" translatable="false">AIzaSyBKF_CoThcYRWGlxHp5z_NG3PsVfmgYUIM</string>
-    <string name="google_app_id" translatable="false">1:140022407267:android:942a47cefd8ac60a361856</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBKF_CoThcYRWGlxHp5z_NG3PsVfmgYUIM</string>
-    <string name="google_storage_bucket" translatable="false">tp07-ddm.firebasestorage.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">877919474455</string>
+    <string name="google_api_key" translatable="false">AIzaSyDHipPPUMz0NJr7ME6z3jTNqMJrPknE-4s</string>
+    <string name="google_app_id" translatable="false">1:877919474455:android:fab1eb4b8b2004b9795d52</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDHipPPUMz0NJr7ME6z3jTNqMJrPknE-4s</string>
+    <string name="google_storage_bucket" translatable="false">dpdm-4943f.firebasestorage.app</string>
     <string name="hint_confirmar_senha">Confirmar senha</string>
     <string name="hint_email">E-mail</string>
     <string name="hint_nome">Nome completo</string>
     <string name="hint_senha">Senha (mínimo 6 caracteres)</string>
-    <string name="project_id" translatable="false">tp07-ddm</string>
+    <string name="project_id" translatable="false">dpdm-4943f</string>
     <string name="subtitulo_cadastro">Preencha os dados abaixo para criar sua conta no Firebase</string>
     <string name="subtitulo_login">Entre na sua conta ou cadastre um novo usuário</string>
     <string name="titulo_cadastro">Cadastro de Usuário</string>

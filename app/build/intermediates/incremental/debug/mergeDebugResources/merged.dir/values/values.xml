@@ -2784,11 +2784,11 @@
         You\'ve already used <ns2:g example="jane.doe@example.com" id="email_addr" translation_description="">%1$s</ns2:g>
         to sign in. Enter your password for that account.
     </string>
-    <string name="gcm_defaultSenderId" translatable="false">140022407267</string>
-    <string name="google_api_key" translatable="false">AIzaSyBKF_CoThcYRWGlxHp5z_NG3PsVfmgYUIM</string>
-    <string name="google_app_id" translatable="false">1:140022407267:android:942a47cefd8ac60a361856</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBKF_CoThcYRWGlxHp5z_NG3PsVfmgYUIM</string>
-    <string name="google_storage_bucket" translatable="false">tp07-ddm.firebasestorage.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">877919474455</string>
+    <string name="google_api_key" translatable="false">AIzaSyDHipPPUMz0NJr7ME6z3jTNqMJrPknE-4s</string>
+    <string name="google_app_id" translatable="false">1:877919474455:android:fab1eb4b8b2004b9795d52</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDHipPPUMz0NJr7ME6z3jTNqMJrPknE-4s</string>
+    <string name="google_storage_bucket" translatable="false">dpdm-4943f.firebasestorage.app</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="hint_confirmar_senha">Confirmar senha</string>
     <string name="hint_email">E-mail</string>
@@ -2937,7 +2937,7 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
-    <string name="project_id" translatable="false">tp07-ddm</string>
+    <string name="project_id" translatable="false">dpdm-4943f</string>
     <string name="search_menu_title">Search</string>
     <string name="searchbar_scrolling_view_behavior" translatable="false">
     com.google.android.material.search.SearchBar$ScrollingViewBehavior
