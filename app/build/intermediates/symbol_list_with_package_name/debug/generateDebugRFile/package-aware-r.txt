@@ -1,8 +1,10 @@
 com.example.appfirebaseauth
 color accent
+color badge_bg
 color bg_light
 color black
 color danger
+color price_green
 color primary
 color primary_dark
 color text_primary
@@ -15,9 +17,12 @@ drawable ic_person
 id btnCadastrar
 id btnEntrar
 id btnExcluirConta
+id btnFavorito
 id btnFirebaseUI
 id btnIrParaCadastro
 id btnSair
+id btnVerFavoritos
+id btnVerProdutos
 id btnVoltarLogin
 id editConfirmarSenhaCadastro
 id editEmailCadastro
@@ -28,9 +33,11 @@ id editSenhaLogin
 id imgAvatar
 id imgCadastro
 id imgLogo
+id imgProduto
 id main
 id progressCadastro
 id progressLogin
+id recyclerViewProdutos
 id tilConfirmarSenhaCadastro
 id tilEmailCadastro
 id tilEmailLogin
@@ -38,8 +45,13 @@ id tilNomeCadastro
 id tilSenhaCadastro
 id tilSenhaLogin
 id txtBemVindo
+id txtCategoriaProduto
+id txtDescricaoProduto
 id txtEmailUsuario
+id txtIdDocumento
+id txtNomeProduto
 id txtNomeUsuario
+id txtPrecoProduto
 id txtSubtituloCadastro
 id txtSubtituloLogin
 id txtTituloCadastro
@@ -49,6 +61,7 @@ id txtUidUsuario
 layout activity_cadastro
 layout activity_login
 layout activity_main
+layout item_produto
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

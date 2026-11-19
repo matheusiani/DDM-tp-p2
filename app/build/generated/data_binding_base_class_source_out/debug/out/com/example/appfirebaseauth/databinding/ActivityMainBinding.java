@@ -9,6 +9,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.appfirebaseauth.R;
@@ -28,10 +29,19 @@ public final class ActivityMainBinding implements ViewBinding {
   public final MaterialButton btnSair;
 
   @NonNull
+  public final MaterialButton btnVerFavoritos;
+
+  @NonNull
+  public final MaterialButton btnVerProdutos;
+
+  @NonNull
   public final ImageView imgAvatar;
 
   @NonNull
   public final ScrollView main;
+
+  @NonNull
+  public final RecyclerView recyclerViewProdutos;
 
   @NonNull
   public final TextView txtBemVindo;
@@ -49,15 +59,20 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView txtUidUsuario;
 
   private ActivityMainBinding(@NonNull ScrollView rootView, @NonNull MaterialButton btnExcluirConta,
-      @NonNull MaterialButton btnSair, @NonNull ImageView imgAvatar, @NonNull ScrollView main,
+      @NonNull MaterialButton btnSair, @NonNull MaterialButton btnVerFavoritos,
+      @NonNull MaterialButton btnVerProdutos, @NonNull ImageView imgAvatar,
+      @NonNull ScrollView main, @NonNull RecyclerView recyclerViewProdutos,
       @NonNull TextView txtBemVindo, @NonNull TextView txtEmailUsuario,
       @NonNull TextView txtNomeUsuario, @NonNull TextView txtTituloHome,
       @NonNull TextView txtUidUsuario) {
     this.rootView = rootView;
     this.btnExcluirConta = btnExcluirConta;
     this.btnSair = btnSair;
+    this.btnVerFavoritos = btnVerFavoritos;
+    this.btnVerProdutos = btnVerProdutos;
     this.imgAvatar = imgAvatar;
     this.main = main;
+    this.recyclerViewProdutos = recyclerViewProdutos;
     this.txtBemVindo = txtBemVindo;
     this.txtEmailUsuario = txtEmailUsuario;
     this.txtNomeUsuario = txtNomeUsuario;
@@ -104,6 +119,18 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnVerFavoritos;
+      MaterialButton btnVerFavoritos = ViewBindings.findChildViewById(rootView, id);
+      if (btnVerFavoritos == null) {
+        break missingId;
+      }
+
+      id = R.id.btnVerProdutos;
+      MaterialButton btnVerProdutos = ViewBindings.findChildViewById(rootView, id);
+      if (btnVerProdutos == null) {
+        break missingId;
+      }
+
       id = R.id.imgAvatar;
       ImageView imgAvatar = ViewBindings.findChildViewById(rootView, id);
       if (imgAvatar == null) {
@@ -111,6 +138,12 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       ScrollView main = (ScrollView) rootView;
+
+      id = R.id.recyclerViewProdutos;
+      RecyclerView recyclerViewProdutos = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewProdutos == null) {
+        break missingId;
+      }
 
       id = R.id.txtBemVindo;
       TextView txtBemVindo = ViewBindings.findChildViewById(rootView, id);
@@ -142,8 +175,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ScrollView) rootView, btnExcluirConta, btnSair, imgAvatar,
-          main, txtBemVindo, txtEmailUsuario, txtNomeUsuario, txtTituloHome, txtUidUsuario);
+      return new ActivityMainBinding((ScrollView) rootView, btnExcluirConta, btnSair,
+          btnVerFavoritos, btnVerProdutos, imgAvatar, main, recyclerViewProdutos, txtBemVindo,
+          txtEmailUsuario, txtNomeUsuario, txtTituloHome, txtUidUsuario);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

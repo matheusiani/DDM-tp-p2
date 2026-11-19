@@ -1,15 +1,17 @@
-package com.example.appfirestore.adapter
+package com.example.appfirebaseauth.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.appfirebaseauth.databinding.ItemProdutoBinding
 import com.example.appfirebaseauth.model.Produto
 import java.text.NumberFormat
 import java.util.Locale
 
 class ProdutoAdapter(
-    private val listaProdutos: MutableList<Produto> = mutableListOf()
+    private val listaProdutos: MutableList<Produto> = mutableListOf(),
+    private val onFavoritoClick: (Produto) -> Unit = {}
 ) : RecyclerView.Adapter<ProdutoAdapter.ProdutoViewHolder>() {
 
     class ProdutoViewHolder(val binding: ItemProdutoBinding) : RecyclerView.ViewHolder(binding.root)
@@ -31,9 +33,15 @@ class ProdutoAdapter(
         holder.binding.txtCategoriaProduto.text = "Categoria: ${produto.category}"
         holder.binding.txtPrecoProduto.text = formatoMoeda.format(produto.price)
         holder.binding.txtDescricaoProduto.text = produto.description
-        holder.binding.txtImagemProduto.text = produto.image
+        holder.binding.txtIdDocumento.text = "ID: ${produto.id}"
 
-        holder.binding.txtIdDocumento.text = "Documento (Autogerado): ${produto.id}"
+        Glide.with(holder.itemView.context)
+            .load(produto.image)
+            .into(holder.binding.imgProduto)
+
+        holder.binding.btnFavorito.setOnClickListener {
+            onFavoritoClick(produto)
+        }
     }
 
     override fun getItemCount(): Int = listaProdutos.size

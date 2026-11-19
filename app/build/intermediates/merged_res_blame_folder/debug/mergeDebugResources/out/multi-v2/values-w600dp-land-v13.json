@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.appfirebaseauth.app-mergeDebugResources-54:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.example.appfirebaseauth.app-mergeDebugResources-56:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\unisanta\\.gradle\\caches\\9.5.0\\transforms\\66e776011e3855afbb532287271764b5\\transformed\\material-1.14.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\unisanta\\.gradle\\caches\\9.5.0\\transforms\\27d6dd1eeb68fdd6096d6f5093bcfec1\\transformed\\material-1.14.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

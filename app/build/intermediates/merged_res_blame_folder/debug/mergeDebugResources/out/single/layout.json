@@ -1,14 +1,26 @@
 [
     {
-        "merged": "com.example.appfirebaseauth.app-mergeDebugResources-55:/layout/activity_main.xml",
-        "source": "com.example.appfirebaseauth.app-main-58:/layout/activity_main.xml"
+        "merged": "com.example.appfirebaseauth.app-mergeDebugResources-57:/layout/item_produto.xml",
+        "source": "com.example.appfirebaseauth.app-main-60:/layout/item_produto.xml"
     },
     {
-        "merged": "com.example.appfirebaseauth.app-mergeDebugResources-55:/layout/activity_cadastro.xml",
-        "source": "com.example.appfirebaseauth.app-main-58:/layout/activity_cadastro.xml"
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\9.5.0\\com.example.appfirebaseauth.app-mergeDebugResources-57:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\9.5.0\\com.example.appfirebaseauth.app-main-60:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.appfirebaseauth.app-mergeDebugResources-55:/layout/activity_login.xml",
-        "source": "com.example.appfirebaseauth.app-main-58:/layout/activity_login.xml"
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\9.5.0\\com.example.appfirebaseauth.app-mergeDebugResources-57:\\layout\\activity_cadastro.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\9.5.0\\com.example.appfirebaseauth.app-main-60:\\layout\\activity_cadastro.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\9.5.0\\com.example.appfirebaseauth.app-mergeDebugResources-57:\\layout\\item_produto.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\9.5.0\\com.example.appfirebaseauth.app-main-60:\\layout\\item_produto.xml"
+    },
+    {
+        "merged": "com.example.appfirebaseauth.app-mergeDebugResources-57:/layout/activity_main.xml",
+        "source": "com.example.appfirebaseauth.app-main-60:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\unisanta\\.gradle\\daemon\\9.5.0\\com.example.appfirebaseauth.app-mergeDebugResources-57:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\unisanta\\.gradle\\daemon\\9.5.0\\com.example.appfirebaseauth.app-main-60:\\layout\\activity_login.xml"
     }
 ]

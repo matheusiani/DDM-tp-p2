@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.appfirebaseauth.app-mergeDebugResources-54:/values-v24/values-v24.xml",
+            "outputFile": "com.example.appfirebaseauth.app-mergeDebugResources-56:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\unisanta\\.gradle\\caches\\9.5.0\\transforms\\c956f798c6865e2f636c76e184f89697\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\unisanta\\.gradle\\caches\\9.5.0\\transforms\\1bb9bb71940cc37dc1b85259bbb1275d\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,17 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\unisanta\\.gradle\\caches\\9.5.0\\transforms\\66e776011e3855afbb532287271764b5\\transformed\\material-1.14.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\unisanta\\.gradle\\caches\\9.5.0\\transforms\\519905f4d49b26084020bfbbf6b5f1b3\\transformed\\appcompat-1.8.0\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\unisanta\\.gradle\\caches\\9.5.0\\transforms\\27d6dd1eeb68fdd6096d6f5093bcfec1\\transformed\\material-1.14.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,12,18,24,30,33,36,39,42",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -37,16 +47,6 @@
                         "endLines": "4,5,6,7,13,19,25,31,38,41,44,47,50",
                         "endColumns": "84,98,86,100,10,10,10,10,10,10,10,10,10",
                         "endOffsets": "427,526,613,714,990,1280,1558,1850,2341,2539,2758,2966,3174"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\unisanta\\.gradle\\caches\\9.5.0\\transforms\\205ff98e49da68e91b83a68680465e92\\transformed\\appcompat-1.8.0\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
                     }
                 }
             ]
