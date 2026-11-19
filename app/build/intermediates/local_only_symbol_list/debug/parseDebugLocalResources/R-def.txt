@@ -31,7 +31,6 @@ id editEmailLogin
 id editNomeCadastro
 id editSenhaCadastro
 id editSenhaLogin
-id imgAvatar
 id imgCadastro
 id imgLogo
 id imgProduto
@@ -51,12 +50,10 @@ id txtDescricaoProduto
 id txtEmailUsuario
 id txtIdDocumento
 id txtNomeProduto
-id txtNomeUsuario
 id txtPrecoProduto
 id txtSubtituloCadastro
 id txtSubtituloLogin
 id txtTituloCadastro
-id txtTituloHome
 id txtTituloLogin
 id txtUidUsuario
 layout activity_cadastro

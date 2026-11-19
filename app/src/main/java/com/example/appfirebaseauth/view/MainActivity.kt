@@ -56,14 +56,18 @@ class MainActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 val isFav = favoritoService.isFavorito(produto.id)
                 if (isFav) {
-                    val sucesso = favoritoService.removerFavorito(produto.id)
-                    if (sucesso) {
+                    val result = favoritoService.removerFavorito(produto.id)
+                    if (result.isSuccess) {
                         Toast.makeText(this@MainActivity, "Removido dos favoritos", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(this@MainActivity, "Erro: ${result.exceptionOrNull()?.localizedMessage}", Toast.LENGTH_SHORT).show()
                     }
                 } else {
-                    val sucesso = favoritoService.adicionarFavorito(produto)
-                    if (sucesso) {
+                    val result = favoritoService.adicionarFavorito(produto)
+                    if (result.isSuccess) {
                         Toast.makeText(this@MainActivity, "Adicionado aos favoritos", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(this@MainActivity, "Erro: ${result.exceptionOrNull()?.localizedMessage}", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
@@ -87,10 +91,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun carregarFavoritos() {
         lifecycleScope.launch {
-            val favoritos = favoritoService.obterFavoritos()
-            produtoAdapter.atualizarLista(favoritos)
-            if (favoritos.isEmpty()) {
-                Toast.makeText(this@MainActivity, "Nenhum favorito encontrado", Toast.LENGTH_SHORT).show()
+            val result = favoritoService.obterFavoritos()
+            if (result.isSuccess) {
+                val favoritos = result.getOrNull() ?: emptyList()
+                produtoAdapter.atualizarLista(favoritos)
+                if (favoritos.isEmpty()) {
+                    Toast.makeText(this@MainActivity, "Nenhum favorito encontrado", Toast.LENGTH_SHORT).show()
+                }
+            } else {
+                Toast.makeText(this@MainActivity, "Erro ao carregar favoritos: ${result.exceptionOrNull()?.localizedMessage}", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -112,7 +121,6 @@ class MainActivity : AppCompatActivity() {
         val email = user.email ?: "-"
 
         binding.txtBemVindo.text = "Olá, $nome!"
-        binding.txtNomeUsuario.text = "Nome: $nome"
         binding.txtEmailUsuario.text = "E-mail: $email"
         binding.txtUidUsuario.text = "UID: ${user.uid}"
     }

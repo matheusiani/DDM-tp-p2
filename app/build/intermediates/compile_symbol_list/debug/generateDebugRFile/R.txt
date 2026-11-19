@@ -29,7 +29,6 @@ int id editEmailLogin 0x0
 int id editNomeCadastro 0x0
 int id editSenhaCadastro 0x0
 int id editSenhaLogin 0x0
-int id imgAvatar 0x0
 int id imgCadastro 0x0
 int id imgLogo 0x0
 int id imgProduto 0x0
@@ -49,12 +48,10 @@ int id txtDescricaoProduto 0x0
 int id txtEmailUsuario 0x0
 int id txtIdDocumento 0x0
 int id txtNomeProduto 0x0
-int id txtNomeUsuario 0x0
 int id txtPrecoProduto 0x0
 int id txtSubtituloCadastro 0x0
 int id txtSubtituloLogin 0x0
 int id txtTituloCadastro 0x0
-int id txtTituloHome 0x0
 int id txtTituloLogin 0x0
 int id txtUidUsuario 0x0
 int layout activity_cadastro 0x0
